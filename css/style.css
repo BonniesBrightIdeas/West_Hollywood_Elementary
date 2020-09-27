@@ -1,5 +1,5 @@
 /*text*/
-h1, h2, h3, h4, h5, p {font-family: 'Quicksand', sans-serif;}
+h1, h2, h3, h4, h5 {font-family: 'Quicksand', sans-serif;}
 body, a {font-family: 'Montserrat', sans-serif;}
 /*background*/
 body {
@@ -82,7 +82,7 @@ nav {
     background-size: cover;
 }
 
-/*footer*/
+/*footer (yes this code is garbage)*/ 
 #footer {
   height: auto;
   background-color: #7E82F9;

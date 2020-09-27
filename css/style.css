@@ -1,5 +1,5 @@
 /*text*/
-h1, h2, h3, h4, h5 {font-family: 'Quicksand', sans-serif;}
+h1, h2, h3, h4, h5, p {font-family: 'Quicksand', sans-serif;}
 body, a {font-family: 'Montserrat', sans-serif;}
 /*background*/
 body {
@@ -14,7 +14,7 @@ body {
 nav {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    
+
 }
 .bg-light {}
 /*hero*/
@@ -80,4 +80,52 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+/*footer*/
+#footer {
+  height: auto;
+  background-color: #7E82F9;
+  background-image: url("../images/footer-ruler.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  padding: 20px 50px 50px 10%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#footer h3 {
+  font-size: 30px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+#footer p {
+  font-size: 24px;
+  font-weight: 100;
+  padding: 0;
+  margin: 0;
+}
+#footer img {
+  font-size: 16px;
+}
+#footerSocial {
+border: 1px solid red;
+}
+.socialIcons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.footerAddy {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+}
+.footerAddy img {
+  height: 6.5rem;
+}
+.footerAddy>div {
+  padding: .5rem;
 }

@@ -10,7 +10,7 @@
     <title>West Hollywood Elementary | Learning Hub</title>
 </head>
 <body>
-<!--navigation-->
+<!--main navigation-->
 <nav class="navbar navbar-expand-lg navbar-light sticky-top">
     <div class="d-flex flex-grow-1">
         <a class="navbar-brand d-none d-lg-inline-block" href="index.html">
@@ -86,30 +86,42 @@
     </svg> 
     </a>
 </nav>
-<!--header-->
-<div class="container bgheader">
-    <h1>LEARNING HUB</h1>
-</div>
-<!--vertical nav-->
+<!--body columns 2 & 9-->
+<!--col 2-->
+<div class="container">
 <div class="row">
-    <ul class="nav flex-sm-column">
-        <li class="nav-item">
-        <a class="nav-link active" href="#"> <img src="images/icon-science.png" alt="science"> </a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#"><img src="images/Icon-math.png" alt="math"></a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#"><img src="images/Icon-socialstudies.png" alt="social studies"></a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><img src="images/Icon-english.png" alt="reading"></a>
-        </li>
+  <div class="col-md-1 no-gutter"></div>
+  <div class="col-md-1">
+    <!--vertical nav-->
+    <ul class="nav flex-column paddingtop">
+      <li class="nav-item marginbottom">
+      <a class="nav-link active activebg" href="#"> <img src="images/icon-science.png" alt="science"> </a>
+      </li>
+      <li class="nav-item marginbottom">
+      <a class="nav-link" href="#"><img src="images/Icon-math.png" alt="math"></a>
+      </li>
+      <li class="nav-item marginbottom">
+      <a class="nav-link" href="#"><img src="images/Icon-socialstudies.png" alt="social studies"></a>
+      </li>
+      <li class="nav-item marginbottom">
+      <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><img src="images/Icon-english.png" alt="reading"></a>
+      </li>
     </ul>
-<!--tabs-->
+  </div>
+
+  <!--col 10-->
+  <div class="col-md-10 no-gutter">
+    <!--header-->
+    <div class="container bgheader marginbottom">
+      <h1 class="bold">LEARNING HUB</h1>
+    </div>
+
+    <div class="container">
+    <!--tabs-->
+    <div class="marginbottom">
     <ul class="nav nav-fill">
         <p>Grade level:</p>
-        <li class="nav-item border">
+        <li class="nav-item">
         <a class="nav-link active" href="#">K</a>
         </li>
         <li class="nav-item">
@@ -128,6 +140,149 @@
         <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">5</a>
         </li>
     </ul>
+    </div>
+  <!--div in div welcome/profiles-->
+  <div class="container marginbottom">
+  <div class="row">
+    <div class="card-deck">
+      <div class="card yellowborder cardshadow" data-aos="flip-up">
+        <div class="card-body">
+            <h5 class="card-title">Welcome to Kindergarten Science!</h5>
+        </div>
+      </div>
+
+      <div class="card yellowborder text-center cardshadow cardhover" data-aos="flip-up">
+        <div class="profileimg">
+          <img src="images/mr-jones.png" alt="Mr. Jones" width="94px">
+        </div>
+        <div class="card-body">
+            <h6 class="card-title">Ask Mr. Jones</h6>
+        </div>
+      </div>
+      
+      <div class="card yellowborder text-center cardshadow cardhover" data-toggle="modal" data-target="#staticBackdrop" data-aos="flip-up">
+        <div class="profileimg">
+          <img src="images/ms-katie.png" alt="Ms. Katie" width="94px">
+        </div>
+        <div class="card-body">
+            <h6 class="card-title">Ask Ms. Katie</h6>
+        </div>
+      </div>
+
+      <div class="card yellowborder text-center cardshadow cardhover" data-aos="flip-up">
+        <div class="profileimg">
+          <img src="images/ms-sarah.png" alt="Ms. Sarah" width="94px">
+        </div>
+        <div class="card-body">
+            <h6 class="card-title">Ask Ms. Sarah</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+          <div class="col-md-2 yellowborder"> 
+            <img src="images/ms-katie.png" alt="Ms. Katie" width="94px">
+          </div>
+          <div class="col-md-8">
+              <form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1"><h5>Ask Ms. Katie</h5></label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="youremail@email.com">
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Topic</option>
+                    <option>English</option>
+                    <option>Math</option>
+                    <option>Science</option>
+                    <option>Social Studies</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Question…"></textarea>
+                </div>
+              </form>
+          </div>
+          <div class="col-md-2 vertalign">
+            <button type="button" class="btn btn-outline-warning">Send</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--lessons-->
+  <div class="greybg paddingtop20">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h6>Lessons</h6>
+        </div>
+        <div class="col-md-6">
+          <a href=""> <h6 class="text-right">View All</h6> </a>
+        </div>
+      </div>
+
+        <div class="container">
+          <div class="row marginbottom">
+            <div class="col-md-12 whitebg paddingaround align-items-center">
+              <p>Tornadoes In Nature II</p>
+              <button type="button" class="datebutton"><p class="text-muted">09/09/20</p></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row marginbottom">
+            <div class="col-md-12 whitebg paddingaround align-items-center">
+              <p>Tornadoes In Nature I</p>
+              <button type="button" class="datebutton"><p class="text-muted">09/08/20</p></button>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+<!--footer-->
+<div>
+  <div id="footer">
+    <div class="footerAddy">
+      <div>
+        <img src="./images/wizard-logo.png" alt="">
+      </div>
+      <div>
+        <h3>West Hollywood Elementary</h3>
+        <p>970 Hammond St.<br/>West Hollywood, California 90069</p>
+      </div>
+    </div>
+    <div id="footerSocial">
+        <h3>Follow Us</h3>
+        <div class="socialIcons">
+          <a href="https://twitter.com/WestHollywoodE1"><img src="./images/Twitter.png" alt="Twitter"></a>
+          <a href="https://www.instagram.com/whewizards/"><img src="./images/Insta.png" alt="Instagram"></a>
+          <a href="https://www.facebook.com/WeHoElementary/"><img src="./images/facebook.png" alt="Facebook"></a>
+        </div>
+    </div>
+  </div>
 </div>
 <!--script-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

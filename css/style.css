@@ -35,7 +35,7 @@ nav {
 .ruler {
   background-image: url("../images/footer-ruler.png");
   background-repeat: repeat-x;
-  background-position: bottom;
+  background-position: 3px bottom;
     margin-bottom: 0;
     height: 50px;
 
@@ -130,7 +130,7 @@ nav {
     background-color: #7E82F9;
     background-image: url("../images/footer-ruler.png");
     background-repeat: repeat-x;
-    background-position: bottom;
+    background-position: 3px bottom;
     padding: 1rem 5% 50px 10%;
     margin-top: 1em;
     color: white;
